@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   padding: 0 15px;
   height: 100%;
+  opacity: ${props => props.done ? 0.6 : 1};
   flex: 0 0 320px; // flex-grow; flex-shrink; flex-basis;
 
   // flex-grow: determina quanto um componente poderá se esticar. 0 - fixed. 1 - 100% do espaço

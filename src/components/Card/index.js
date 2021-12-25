@@ -1,16 +1,15 @@
 import React from 'react';
 
 import { Container, Label } from './styles';
-import {success} from '../../utils/color'
 
-function Card() {
+function Card({data}) {
   return (
     <Container>
       <header>
-        <Label color={success}/>
+        {data.labels.map(label => <Label key={label} color={label} />)}      
       </header>
-      <p>Fazer migração completa do servidor</p>
-      <img src="https://avatars.dicebear.com/api/bottts/roboto.svg" alt="foto avatar Jane Doe" srcset="" />
+      <p>{data.content}</p>
+      {!!data.user && <img src={data.user} alt="" />}
     </Container>
   )
 }
