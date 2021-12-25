@@ -1,7 +1,6 @@
 import React from 'react';
-import Label from '../Label'
 
-import { Container } from './styles';
+import { Container, Label } from './styles';
 import {success} from '../../utils/color'
 
 function Card() {
