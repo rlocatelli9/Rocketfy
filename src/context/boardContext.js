@@ -16,7 +16,8 @@ const BoardProvider = ({children}) => {
       draftLists[fromList].cards.splice(from, 1);
       draftLists[toList].cards.splice(to, 0, dragged);
     }))
-  })
+  }, [lists, setLists])
+
   return (
     <BoardContext.Provider value={{state: {lists}, action: {move}}}>
       {children}
