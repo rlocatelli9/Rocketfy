@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const Container = styled.div`
   padding: 0 15px;
@@ -39,5 +39,18 @@ export const Container = styled.div`
   ul {
     margin-top: 30px;
   }
+
+  ${props => props.isDragging && css`
+    border: 2px dashed rgba(0,0,0, 0.2);
+    padding-top: 31px;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    cursor: grabbing; 
+
+    p, img, header {
+      opacity: 0;
+    }
+  `}
 
 `;
