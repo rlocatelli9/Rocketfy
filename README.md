@@ -6,8 +6,6 @@
 
 
 ## TODO 
- * drop cards when list is empty
- * drop card at end of list
  * Finish Application Header
  * add new cards to the list
  * delete cards
