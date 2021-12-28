@@ -9,3 +9,18 @@
  * add new cards to the list
  * delete cards
  * update cards
+
+
+## :camera: Screenshot
+
+
+<h1 align="center"> 
+  <img alt="Board Page" title="Board Page" src="/.github/board.png" />
+</h1>
+
+## :sunglasses: Como usar
+
+- Clone esse repositório;
+- Acesse o diretório do projeto.
+- No terminal, execute: `yarn` ou `npm i` para instalar as dependências do projeto.
+- Após instalar as dependências do projeto, execute o projeto com o comando: `yarn start` ou `npm start`
