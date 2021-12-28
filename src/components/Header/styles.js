@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const Container = styled.div`
   height: 80px;
@@ -58,11 +58,15 @@ export const Button = styled.button`
   
   display: flex;
   align-items: center;
-
-  border-bottom: ${props => props.isSelected && '2px solid #FFF'};
+  
+  ${props => props.isSelected && css`
+    transform: scale(0.9);
+    padding-bottom: 10px;
+    border-bottom: ${props => props.isSelected && '2px solid #FFF'};
+  `}
 
   span {
-    margin-left: 5px;
+    margin: 0 5px;
   }
 
   &:hover{
