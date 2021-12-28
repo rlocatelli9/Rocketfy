@@ -59,6 +59,8 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
 
+  border-bottom: ${props => props.isSelected && '2px solid #FFF'};
+
   span {
     margin-left: 5px;
   }
