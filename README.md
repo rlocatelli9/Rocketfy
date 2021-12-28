@@ -6,7 +6,6 @@
 
 
 ## TODO 
- * Finish Application Header
  * add new cards to the list
  * delete cards
  * update cards
