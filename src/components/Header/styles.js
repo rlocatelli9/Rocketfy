@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 export const Container = styled.div`
   height: 80px;
   padding: 0 30px;
-  background: #7159c1;
+  background: #3c85ff;
   color: #fff;
 
   display: flex;
@@ -33,7 +33,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
+    margin-left: auto;    
   }  
 `;
 
@@ -54,7 +54,8 @@ export const NavBar = styled.nav`
 export const Button = styled.button`
   border: none;
   background: transparent;
-  color: #FFF;
+  color: ${props => props.isSelected ? '#FFF' : '#BBB'};
+  font-weight: bold;
   
   display: flex;
   align-items: center;
@@ -71,5 +72,70 @@ export const Button = styled.button`
 
   &:hover{
     cursor: pointer;
+  }
+`;
+
+export const Profile = styled.section`
+  margin-left: auto;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > svg {
+    cursor: pointer;
+  }
+
+  > img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+  }
+`;
+
+export const Actions = styled.section`
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;    
+    align-items: center;
+    align-content: flex-end;
+  }
+
+  li {
+    margin-right: 8px;
+
+    svg {
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  button {
+    min-width: 50px;
+    height: 30px;
+    padding: 6px;
+    background: #0b66ff;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+
+    small {
+      color: #eee;
+
+      &.listLength {
+        font-size: 10px;
+        margin-right: 5px;
+        background: #6EC1E4;
+        border-radius: 2px;
+        padding: 3px;
+        color: black;
+      }
+    }
   }
 `;
